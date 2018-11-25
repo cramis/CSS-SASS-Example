@@ -55,7 +55,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
@@ -63,6 +64,7 @@ body {
     text-transform: uppercase;
 
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -99,6 +101,7 @@ body {
 
 
 @keyframes moveInLeft {
+    /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
     0% {
         opacity: 0;
         transform: translateX(-100px);
@@ -116,6 +119,7 @@ body {
 
 
 @keyframes moveInRight {
+    /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
     0% {
         opacity: 0;
         transform: translateX(100px);
@@ -129,4 +133,30 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px; /* 버튼 윤곽을 만들기 */
+    display: inline-block;
+    border-radius: 100px; /* 버튼 모서리를 둥글게 */
+    transition: all .2s; /* 애니메이션 효과를 0.2초동안 부드럽게 동작 */
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
