@@ -25,11 +25,10 @@ body {
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(
-        to right bottom, 
-        rgba(127, 213, 112, 0.8), 
-        rgba(40, 180, 133, 0.8)), 
-    url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom,
+        rgba(127, 213, 112, 0.8),
+        rgba(40, 180, 133, 0.8)),
+        url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -101,6 +100,7 @@ body {
 
 
 @keyframes moveInLeft {
+
     /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
     0% {
         opacity: 0;
@@ -119,6 +119,7 @@ body {
 
 
 @keyframes moveInRight {
+
     /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
     0% {
         opacity: 0;
@@ -137,6 +138,7 @@ body {
 
 
 @keyframes moveInBottom {
+
     /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
     0% {
         opacity: 0;
@@ -154,10 +156,13 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px; /* 버튼 윤곽을 만들기 */
+    padding: 15px 40px;
+    /* 버튼 윤곽을 만들기 */
     display: inline-block;
-    border-radius: 100px; /* 버튼 모서리를 둥글게 */
-    transition: all .2s; /* 애니메이션 효과를 0.2초동안 부드럽게 동작 */
+    border-radius: 100px;
+    /* 버튼 모서리를 둥글게 */
+    transition: all .2s;
+    /* 애니메이션 효과를 0.2초동안 부드럽게 동작 */
     position: relative;
 }
 
@@ -195,7 +200,7 @@ body {
 }
 
 .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6); 
+    transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
 
