@@ -1,0 +1,51 @@
+@keyframes moveInLeft {
+
+    /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInRight {
+
+    /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInBottom {
+
+    /* 움직임에 대한 효과를 각 0~100% 단계별로 표시 */
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
