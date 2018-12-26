@@ -136,6 +136,12 @@ body {
   .btn-white::after {
     background-color: #fff; }
 
+.btn-primary {
+  background-color: #001858;
+  color: #fff; }
+  .btn-primary::after {
+    background-color: #001858; }
+
 .btn::after {
   content: "";
   display: inline-block;
